@@ -1,0 +1,46 @@
+# Site settings
+title: Jibby
+description: '상품의 최저가로 여러분을 초대합니다.'
+url: 'https://jibby406.github.io'
+baseurl: ''
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+# disable_landing_page: true
+timezone: Asia/Seoul
+
+author:
+  name: 'Jibby'
+  email: n3935540@gmail.com
+  twitter_username:
+  facebook_username: 
+  github_username: 
+  linkedin_username: 
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 50
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+
